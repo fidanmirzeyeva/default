@@ -1,0 +1,131 @@
+// hero_post start
+.hero_post{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 15px ;
+  
+            background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.43)),
+    url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/post-bg.jpg);
+
+       background-position: center;
+        background-size: cover;
+      
+    .info_post{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 55%;
+        
+        h3{
+           
+            color: white;
+            font-size: 63px;
+            letter-spacing: 5px;
+
+        }
+    }
+    .info2_post{
+        
+        width: 55%;
+       
+
+        p{
+          
+            color: white;
+            font-size: 32px;
+
+        }
+        
+ }
+ .info3_post{
+   width: 55%;
+   padding-top: 20px;
+   
+
+    p{
+      
+        color: white;
+        font-size: 20px;
+
+    }
+
+ }
+ @media only screen and (max-width:600px) {
+    .hero_post {
+        .info_post {
+            h3 {
+                font-size: 40px;
+            }
+        }
+
+        .info2_post {
+            p {
+
+                font-size: 20px;
+            }
+        }
+        .info3_post {
+            p {
+
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+}
+// hero_post end
+
+// hero2_post start
+.hero2_post{
+    .text_post{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px auto;
+        padding-top: 80px;
+        // background-color: red;
+        .text1{
+            width: 65%;
+           padding-bottom: 40px; 
+           p{
+            font-size: 23px;
+           }
+           h3{
+            font-size: 35px;
+           }
+           a:hover{
+            color: #1ABC9C;
+           }
+           
+                    
+        
+           }
+        }
+        .diff{
+            opacity: 0.5;
+        }
+       
+        .img_post{
+            width: 80%;
+            text-align: center;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            span{
+               opacity: 0.7;
+                font-size: 15px;
+            }
+        }
+        
+    }
+  
