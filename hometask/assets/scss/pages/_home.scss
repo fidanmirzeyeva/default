@@ -123,14 +123,14 @@
 }
 .hero2_home{
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     // background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .hero2_info{
-        width: 30%;
+        width: 100%;
         min-height: 300px;
         // background-color: pink;
         h3{
@@ -138,8 +138,8 @@
         }
     }
     .hero2_info2{
-        width: 50%;
-        height: 300px;
+        width: 100%;
+        min-height: 300px;
         // background-color: aqua;
         display: flex;
         align-items: center;
@@ -218,7 +218,7 @@
          align-items: left;
          justify-content: center;
          width: 70%;
-         max-height: 900px;
+       
         //  padding-bottom: 50px;  
          h3{
              font-size: 30px;
@@ -296,7 +296,8 @@
     flex-direction: column;
     
     .container_info{
-        width: 40%;
+        width: 100%;
+        max-width: 450px;
         // background-color: red;
         display: flex;
         align-items: center;
@@ -319,13 +320,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 50px;
         // background-color: yellow;
-        width: 80%;
-        height: 700px;
+        width: 100%;
+        min-height: 700px;
+        padding-bottom: 90px;
         .card{
-            width: 350px;
-            height: 450px;
+            max-width: 350px;
+            min-height: 450px;
             border-radius: 7px;
             // background-color: green;
             box-shadow: 3px 3px 3px 3px rgb(165, 163, 163);
@@ -382,12 +385,14 @@
         }
     }
     .blue{
-        width: 77%;
-        min-height: 150px;
+        width: 100%;
+        max-width: 1165px;
+        min-height: 250px;
         background-color: #287EFC;
         border-radius: 7px;
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: space-around;
         .blue_info{
             display: flex;
@@ -398,6 +403,7 @@
                     color: white;
                     font-size: 32px;
                     font-weight: bold;
+                    text-align: center;
                 }
 
             }
@@ -405,10 +411,18 @@
                 color: white;
                 font-size: 17   px;
                 opacity: 0.6;
+                p{
+text-align: center;
+                }
             }
 
         }
         .blue_info2{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
             .blue_btn{
                 width: 250px;
                 .input{

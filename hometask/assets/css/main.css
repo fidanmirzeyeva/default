@@ -172,21 +172,21 @@
 }
 .hero2_home {
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hero2_home .hero2_info {
-  width: 30%;
+  width: 100%;
   min-height: 300px;
 }
 .hero2_home .hero2_info h3 {
   font-size: 38px;
 }
 .hero2_home .hero2_info2 {
-  width: 50%;
-  height: 300px;
+  width: 100%;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,7 +254,6 @@
     align-items: left;
     justify-content: center;
     width: 70%;
-    max-height: 900px;
   }
   .hero2_home .hero2_info h3 {
     font-size: 30px;
@@ -319,7 +318,8 @@
   flex-direction: column;
 }
 .container .container_info {
-  width: 40%;
+  width: 100%;
+  max-width: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,13 +341,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
-  width: 80%;
-  height: 700px;
+  width: 100%;
+  min-height: 700px;
+  padding-bottom: 90px;
 }
 .container .container_cards .card {
-  width: 350px;
-  height: 450px;
+  max-width: 350px;
+  min-height: 450px;
   border-radius: 7px;
   box-shadow: 3px 3px 3px 3px rgb(165, 163, 163);
 }
@@ -393,12 +395,14 @@
   opacity: 0.6;
 }
 .container .blue {
-  width: 77%;
-  min-height: 150px;
+  width: 100%;
+  max-width: 1165px;
+  min-height: 250px;
   background-color: #287EFC;
   border-radius: 7px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
 }
 .container .blue .blue_info {
@@ -410,11 +414,22 @@
   color: white;
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
 .container .blue .blue_info .info2 {
   color: white;
   font-size: 17 px;
   opacity: 0.6;
+}
+.container .blue .blue_info .info2 p {
+  text-align: center;
+}
+.container .blue .blue_info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .container .blue .blue_info2 .blue_btn {
   width: 250px;
